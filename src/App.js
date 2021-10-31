@@ -18,6 +18,8 @@ import PopularDesiert from './pages/Home/PopularDesiert/PopularDesiert';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import VerifyItem from './pages/VerifyItem/VerifyItem';
 import ManageProduct from './pages/ManageProduct/ManageProduct';
+import Contact from './pages/Contact/Contact';
+import About from './pages/About/About';
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,12 @@ function App() {
             </Route>
             <Route path="/gallery">
               <Galary></Galary>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+            <Route path="/about">
+              <About></About>
             </Route>
             <Route path="/popularDesiert">
               <PopularDesiert></PopularDesiert>

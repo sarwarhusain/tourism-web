@@ -11,8 +11,8 @@ const VerifyItem = () => {
   }, [])
   return (
     <div className="bg-white">
-      <h2 className="text-2xl font-bold text-yellow-200">Details of: {item.name}</h2>
-      <h2 className="text-2xl font-bold text-yellow-200">This is id: {verifyId}</h2>
+      <h2 className="text-2xl font-bold text-yellow-200">Product Name: {item.name}</h2>
+      <h2 className="text-2xl font-bold text-yellow-200">Product id: {verifyId}</h2>
       <br></br>
       <br></br>
       <br></br>

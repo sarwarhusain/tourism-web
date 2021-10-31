@@ -5,7 +5,7 @@ const VerifyItem = () => {
   const { verifyId } = useParams();
   const [item, setItem] = useState({})
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${verifyId}`)
+    fetch(`https://ghastly-flesh-65618.herokuapp.com//services/${verifyId}`)
       .then(res => res.json())
       .then(date => setItem(date))
   }, [])

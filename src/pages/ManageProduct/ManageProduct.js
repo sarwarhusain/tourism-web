@@ -6,14 +6,14 @@ const ManageProduct = () => {
 
   const [products, setProducts] = useState([])
   useEffect(() => {
-    fetch('http://localhost:5000/services')
+    fetch('https://ghastly-flesh-65618.herokuapp.com//services')
       .then(res => res.json())
       .then(data => setProducts(data))
   }, [])
 
   const handleDelete
     = id => {
-      const url = `http://localhost:5000/services/${id}`;
+      const url = `https://ghastly-flesh-65618.herokuapp.com/services/${id}`;
       fetch(url, {
         method: 'DELETE'
       })

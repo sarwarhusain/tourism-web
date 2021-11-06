@@ -41,7 +41,7 @@ const VerifyItem = () => {
         <h1 className="text-danger font-bold">Price:{item.price}$</h1>
       </div>
       <div className="col-md-6 verify-ite bg-gray-500 bg-opacity-50 ">
-        <h2 className="text-yellow-800 text-3xl font-bold">Delivery Information</h2>
+        <h2 className="text-yellow-500 text-3xl font-bold">Delivery Information</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input {...register("name", { required: true, maxLength: 20 })}
             defaultValue={item.name}

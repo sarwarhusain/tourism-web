@@ -57,7 +57,7 @@ const VerifyItem = () => {
           <input {...register("image",)}
             defaultValue={item.img}
             placeholder="image" />
-          <Link> <input className="text-2xl rounded-full text-yellow-700 font-bold hover:bg-green-600" type="submit" /></Link>
+          <input className="text-2xl rounded-full text-yellow-700 font-bold hover:bg-green-600" type="submit" />
           <br />
 
         </form>

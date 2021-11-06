@@ -7,13 +7,20 @@ initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  const [error, setError] = useState();
   const auth = getAuth();
-  
-  const googleProvider = new GoogleAuthProvider();
-  const signInUsingGoogle = () => {
-    return signInWithPopup(auth, googleProvider);
 
-  }
+  const googleProvider = new GoogleAuthProvider();
+
+  const signInUsingGoogle = () => {
+    return signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        sessionStorage.setItem("email", result.user.email);
+        // console.log(result.user);
+        setError("");
+      })
+      .catch((error) => setError(error.message));
+  };
 
   const logOut = () => {
     signOut(auth)
@@ -29,6 +36,8 @@ const useFirebase = () => {
     });
 
   }, [])
+
+
   return {
     user,
     signInUsingGoogle,

@@ -18,16 +18,16 @@ const AddItem = () => {
   }
 
   return (
-    <div className="add-item bg-gray-100 bg-opacity-50 ">
+    <div className="bg-yellow-200  container add-item bg-opacity-50 mx-auto  items-center ">
       <h2 className="text-yellow-800 text-3xl font-bold">Please Add Item</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register("name", { required: true, maxLength: 20 })} placeholder="name" />
         <input {...register("price",)} placeholder="price" />
 
         <input {...register("img",)} placeholder="image" />
-        <input className="text-2xl rounded-full text-yellow-700 font-bold" type="submit" />
+        <input className="text-2xl rounded-full text-yellow-700 font-bold hover:bg-green-600" type="submit" />
         <br />
-        <Link to="/home"><button>Back to Home</button></Link>
+        <Link to="/home"><button className="text-white font-bold bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Back to Home</button></Link>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
       </form>

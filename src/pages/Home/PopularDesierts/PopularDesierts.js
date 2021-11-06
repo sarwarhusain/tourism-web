@@ -4,7 +4,7 @@ import './PopularDesierts.css'
 const PopularDesierts = () => {
   const [populardesierts, setPopulardesierts] = useState([])
   useEffect(() => {
-    fetch('https://ghastly-flesh-65618.herokuapp.com//services')
+    fetch('https://ghastly-flesh-65618.herokuapp.com/services')
       .then(rse => rse.json())
       .then(data => setPopulardesierts(data));
   }, [])

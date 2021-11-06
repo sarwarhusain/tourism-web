@@ -44,3 +44,14 @@ const PopularDesiert = ({ populardesiert }) => {
 
 
 export default PopularDesiert;
+
+
+
+
+
+// <Link to={`/item/${_id}`}><button className="text-indigo-500 inline-flex items-center lg:font-bold md:mb-2 lg:mb-0 bg-yellow-400 p-2 rounded-3xl">Place Order
+//   <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" strokeLinejoin="round">
+//     <path d="M5 12h14"></path>
+//     <path d="M12 5l7 7-7 7"></path>
+//   </svg>
+// </button></Link>

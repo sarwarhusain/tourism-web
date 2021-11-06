@@ -13,15 +13,14 @@ const Header = () => {
         </Link>
         <Link className="md:ml-auto flex flex-wrap items-center text-base justify-center font-bold text-black ">
           <Link to="/home" className="mr-5 hover:text-white">Home</Link>
-          <Link to="/gallery" className="mr-5 hover:text-white">Gallery</Link>
-          <Link to="/contact" className="mr-5 hover:text-white">Contact Us</Link>
-          <Link to="/about" className="mr-5 hover:text-white">About</Link>
-          <Link to="/addItem" className="mr-5 hover:text-white">AddItem</Link>
-          <Link to="/contact" className="mr-5 hover:text-white">Contact Us</Link>
+          <Link to="/myOrders" className="mr-5 hover:text-white">MyOrders</Link>
+          <Link to="/addItem" className="mr-5 hover:text-white">AddFood</Link>
+          <Link to="/manageProduct" className="mr-5 hover:text-white">ManageFood</Link>
+
         </Link>
         {user?.email ?
           <button className="text-black font-bold bg-green-100 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-100 rounded text-lg" onClick={logOut} >Logout</button> :
-          <button className="text-black font-bold bg-green-100 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-100 rounded text-lg"><Link as={Link} to="/login">Login</Link>
+          <button className="text-black font-bold bg-green-100 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-100 rounded text-lg"><Link to="/login">Login</Link>
           </button>
         }
         <p className="font-bold text-red-100">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Link } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import './VerifyItem.css'
@@ -23,6 +23,7 @@ const VerifyItem = () => {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
+
     })
       .then((res) => res.json())
       .then((result) => console.log(result));
@@ -56,7 +57,7 @@ const VerifyItem = () => {
           <input {...register("image",)}
             defaultValue={item.img}
             placeholder="image" />
-          <input className="text-2xl rounded-full text-yellow-700 font-bold hover:bg-green-600" type="submit" />
+          <Link> <input className="text-2xl rounded-full text-yellow-700 font-bold hover:bg-green-600" type="submit" /></Link>
           <br />
 
         </form>

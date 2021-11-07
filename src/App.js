@@ -52,9 +52,9 @@ function App() {
               <AddItem></AddItem>
             </PrivateRoute>
 
-            <Route path="/manageProduct">
+            <PrivateRoute path="/manageProduct">
               <ManageProduct></ManageProduct>
-            </Route>
+            </PrivateRoute>
             <Route path="/manageOrder">
               <ManageOrder></ManageOrder>
             </Route>

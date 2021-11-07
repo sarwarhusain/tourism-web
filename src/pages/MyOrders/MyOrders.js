@@ -31,22 +31,23 @@ const MyOrders = () => {
 
       <div className="">
         <div className="row container">
-          {orders?.map((item) => (
+          {orders.map((item) => (
             <div className="col-md-4">
-              <div className=" border p-3">
+              <div className="service border p-3">
                 <div className="">
-                  <img className="w-100" src={item?.image} alt="" />
+                  <img className="w-100" src={item.image} alt="" />
                 </div>
 
-                <h6>{item?.name}</h6>
-                <h4>{item?.model}</h4>
-                <p>{item?.description}</p>
-                <h3 className="text-danger"> Price :{item?.price}$</h3>
+                <h6>{item.name}</h6>
+                <h4>{item.model}</h4>
+                <p>{item.description}</p>
+                <h3 className="text-danger"> price :{item.price}$</h3>
+
                 <button
-                  onClick={() => handleDelete(item?._id)}
-                  className="bg-red-500 hover:bg-red-500 round-1"
+                  onClick={() => handleDelete(item._id)}
+                  className="bg-red-500"
                 >
-                  Delete
+                  Cancel
                 </button>
               </div>
             </div>

@@ -18,7 +18,7 @@ const AddItem = () => {
   }
 
   return (
-    <div className="bg-yellow-200  container add-item bg-opacity-50 mx-auto  items-center ">
+    <div className="bg-yellow-200 container add-item bg-opacity-50 mx-auto  items-center ">
       <h2 className="text-yellow-800 text-3xl font-bold">Please Add Item</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register("name", { required: true, maxLength: 20 })} placeholder="name" />

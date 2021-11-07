@@ -19,6 +19,7 @@ import VerifyItem from './pages/VerifyItem/VerifyItem';
 import ManageProduct from './pages/ManageProduct/ManageProduct';
 import About from './pages/About/About';
 import MyOrders from './pages/MyOrders/MyOrders';
+import ManageOrder from './pages/ManageOrder/ManageOrder';
 function App() {
   return (
     <div className="App">
@@ -50,14 +51,12 @@ function App() {
             <PrivateRoute path="/addItem">
               <AddItem></AddItem>
             </PrivateRoute>
+
             <Route path="/manageProduct">
               <ManageProduct></ManageProduct>
             </Route>
-            <Route path="/">
-
-            </Route>
-            <Route path="/">
-
+            <Route path="/manageOrder">
+              <ManageOrder></ManageOrder>
             </Route>
             <Route path="*">
               <Notfounde></Notfounde>

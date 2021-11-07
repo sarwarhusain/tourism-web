@@ -18,12 +18,13 @@ const VerifyItem = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
+
     data.email = email;
+
     fetch("https://ghastly-flesh-65618.herokuapp.com/confirmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
-
     })
       .then((res) => res.json())
       .then((result) => console.log(result));
@@ -31,11 +32,11 @@ const VerifyItem = () => {
   };
 
   return (
+    // from for update
     <div className="bg-yellow-200 verify-item container px-10 py-24 mx-auto flex items-center gap-80 ">
       <div className="col-md-6">
         <div className="">
           <img className="w-50" src={item.img} alt="" />
-
         </div>
         <h1 className="text-danger font-bold">Name:{item.name}</h1>
         <h1 className="text-danger font-bold">Price:{item.price}$</h1>
@@ -69,16 +70,3 @@ const VerifyItem = () => {
 
 export default VerifyItem;
 
-
-// <h2 className="text-2xl font-bold text-black">Product id: {verifyId}</h2>
-//   <Link to="/home"><button>Submit</button></Link>
-// fetch("https://ghastly-flesh-65618.herokuapp.com/orderConfirm", {
-//   method: "POST",
-//   headers: { "content-type": "application/json" },
-//   body: JSON.stringify(data),
-// })
-//   .then((res) => res.json())
-//   .then((result) =>
-//     console.log(result));
-// console.log(data);
-// }

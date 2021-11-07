@@ -13,7 +13,7 @@ const Header = () => {
         </Link>
         <Link className="md:ml-auto flex flex-wrap items-center text-base justify-center font-bold text-black ">
           <Link to="/home" className="mr-5 hover:text-white">Home</Link>
-          <Link to="/myOrders" className="mr-5 hover:text-white">MyOrders</Link>
+          <Link to="/myOrders" className="mr-5 hover:text-white">MyOrder</Link>
           <Link to="/addItem" className="mr-5 hover:text-white">AddFood</Link>
           <Link to="/manageProduct" className="mr-5 hover:text-white">ManageFood</Link>
 
@@ -27,7 +27,7 @@ const Header = () => {
           Signed as: <a href="/login">{user?.displayName}</a>
         </p>
       </Container>
-    </Navbar>
+    </Navbar >
   );
 };
 

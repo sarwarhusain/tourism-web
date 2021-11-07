@@ -14,7 +14,7 @@ const FixedProducts = () => {
             <p className="mb-8 leading-relaxed">Pizza is a dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients</p>
             <div className="flex w-full md:justify-start justify-center items-end">
 
-              <Link to="/home"><button className="inline-flex text-white bg-green-400  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Procced to Order <svg className="w-8 h-8 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" strokeLinejoin="round">
+              <Link to="/login"><button className="inline-flex text-white bg-green-400  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Procced to Order <svg className="w-8 h-8 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" strokeLinejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
               </svg></button></Link>
@@ -39,7 +39,7 @@ const FixedProducts = () => {
             <p className="mb-8 leading-relaxed">A hamburger is a food, typically considered a sandwich, consisting of one or more cooked patties—usually ground meat</p>
             <div className="flex w-full md:justify-start justify-center items-end">
 
-              <Link to="/home"><button className="inline-flex text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" > Procced to Order <svg className="w-8 h-8  ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" strokeLinejoin="round">
+              <Link to="/login"><button className="inline-flex text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" > Procced to Order <svg className="w-8 h-8  ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" strokeLinejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
               </svg></button></Link>
@@ -63,7 +63,7 @@ const FixedProducts = () => {
             <p className="mb-8 leading-relaxed">Soup is a primarily liquid food, generally served warm or hot, that is made by combining ingredients of meat or vegetables with stock, milk</p>
             <div className="flex w-full md:justify-start justify-center items-end">
 
-              <Link to="/home"><button className="inline-flex text-white bg-green-400  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Procced to Order <svg className="w-8 h-8 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" strokeLinejoin="round">
+              <Link to="/login"><button className="inline-flex text-white bg-green-400  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Procced to Order <svg className="w-8 h-8 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinejoin="round" strokeLinejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
               </svg></button></Link>

@@ -10,7 +10,6 @@ import Header from './pages/Shared/Header/Header';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login/Login';
 import AuthProvider from './Contexts/AuthProvider';
-import Galary from './pages/Galary/Galary';
 import Footer from './pages/Home/Footer/Footer';
 import Notfounde from './pages/Notfounde/Notfounde';
 import AddItem from './pages/AddItem/AddItem';
@@ -36,9 +35,6 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/gallery">
-              <Galary></Galary>
-            </Route>
             <Route path="/myOrders">
               <MyOrders></MyOrders>
             </Route>
@@ -56,6 +52,9 @@ function App() {
             </PrivateRoute>
             <Route path="/manageProduct">
               <ManageProduct></ManageProduct>
+            </Route>
+            <Route path="/">
+
             </Route>
             <Route path="/">
 
